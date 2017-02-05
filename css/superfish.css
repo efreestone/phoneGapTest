@@ -1,0 +1,32 @@
+nav{ position:relative; margin: 0px 0px 0 0;padding: 23px 30px 0 0;float: right;}
+.sf-menu ul {position:absolute;top:-999px; display:none;/* left offset of submenus need to match (see below) */}
+.sf-menu ul li {width:100%}
+.sf-menu li {float:left;position:relative}
+
+.sf-menu>li>a{position:relative; font-size: 16px; font-weight: 700; text-transform: uppercase; line-height: 20px; color:#c4c4c4;}
+.sf-menu>li>a:hover,.sf-menu>li.current>a{color: #fff;}
+.sf-menu>li:hover,.sf-menu>li.current,.sf-menu>li.sfHover{}
+
+.sf-menu>li{margin-left: 30px;}
+.sf-menu a{}
+
+#menu-icon{display: none;}
+/*==================================RESPONSIVE LAYOUTS===============================================*/
+@media only screen and (max-width: 995px) {
+	.sf-menu{display: block;}
+}
+
+@media only screen and (max-width: 700px) {
+	#menu-icon{display: block;background:url("../images/menu-icon.png") center -27px no-repeat #b6c600;width: 60px;height: 40px;font-size: 22px; line-height: 28px;position: absolute;top: 15px;right: 0px;cursor: pointer;border-radius: 3px;}
+   	#menu-icon:hover{background-color: #89a100;}
+	.sf-menu{position: absolute;display: none;top: 55px;right: 0;width: 170px;background: #fff;padding: 10px 0;border-radius:3px; }
+	.sf-menu>li>a{font-size: 14px;line-height: 19px;padding: 4px 14px;color: #3d3d3d;}
+  	.sf-menu>li{float: none;margin: 0 2px 1px;}
+  	.sf-menu>li>a:hover,.sf-menu>li.current>a{color: #b6c600;}
+
+}
+
+@media only screen and (max-width: 479px) {
+	
+}
+@media only screen and (min-width: 768px) {.sf-menu { display:block !important;}}
